@@ -4,14 +4,36 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
-<title>Insert title here</title>
+<title>Login Page</title>
 </head>
+<style>
+div.ex{
+	text-align: center;
+	width: 35%;
+	padding: 10px;
+	border: 5px solid grey;
+	margin: 20px;
+}
+</style>
 <body>
-
-	<form action="/helloMVC/doLogin" method="get">
-		Customer ID(id001, id002, id003, id004, i005):
-		<input type="text" name="customerID" /> <br/>
-		<input type="submit" value="press"/>
-	</form>
+	<h1>Login Form</h1>
+	<div class="ex"> 
+		<form action="/helloMVC/doLogin" method="post">
+			<table cellpadding="5">
+				<tr>
+					<td>아이디</td>
+					<td><input type="text" name="id" /></td>
+				</tr>
+				<tr>
+					<td>비밀번호</td>
+					<td><input type="password" name="password" /></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="submit" value="login" /></td>
+				</tr>
+			</table>
+		</form>	
+	</div>
 </body>
 </html>

@@ -4,14 +4,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
-<title>helloMVC Web Application</title>
+<title>Insert title here</title>
 </head>
 <body>
-
-	This is the home page for shopping
-
-	<p> <a href = "/helloMVC/home?action=login"> go to login page </a> </p>
-	<p> <a href = "/helloMVC/home?action=register"> go to register page </a> </p>
+	<h2>${customer.name} logged in successfully!!</h2>
 	
+	<p>
+		<a href="/helloMVC/index.jsp"> go to home page </a>
+	</p>
 </body>
 </html>
